@@ -28,11 +28,19 @@ function overrideCurrentColor(color) {
 }
 
 function overrideClassNames(color) {
-	addStyleString('.primary-text {color:'+color+' !important;}');
-	addStyleString('.primary-fill {background-color:'+color+' !important; color: white;}');
-	addStyleString('.primary-border {border-color:'+color+' !important;}');
-	addStyleString('.primary-fill-hover:hover {background-color:'+color+' !important; color: white;}');
+	var fill = '{background-color:'+color+' !important; color: white;}';
+	var textColor =  '{color:'+color+' !important;}';
+	var border = '{border-color:'+color+' !important;}';
 
+	addStyleString('.primary-text '+textColor);
+	addStyleString('.primary-fill ' + fill);
+	addStyleString('.primary-fill-hover:hover ' + fill);
+	addStyleString('.primary-before-fill:before ' + fill);
+	addStyleString('.primary-after-fill:after ' + fill);
+	addStyleString('.primary-border ' + border);
+	addStyleString('.primary-border-focus:focus ' + border);
+	addStyleString('.primary-before-border:before ' + border);
+	addStyleString('.primary-after-border:after ' + border);
 }
 
 const actions = {

@@ -14,3 +14,22 @@
 .primary-border {
 	border-color: black;
 }
+
+.primary-before-fill:before {
+	background: black;
+}
+
+.primary-before-border:before {
+	border-color: black;
+}
+
+.primary-after-fill:after {
+	background: black;
+	color: white;
+}
+
+.primary-after-border:after {
+	border-color: black;
+}
+
+
