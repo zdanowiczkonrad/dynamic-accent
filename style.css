@@ -1,0 +1,240 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 13px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	color: #333;
+	background: #eee;
+}
+
+p {
+	line-height: 160%;
+	margin-bottom: 25px;
+	color: #555;
+}
+
+a {
+	color: #777;
+}
+
+#container {
+	width: 100vw;
+	height: 100vh;
+}
+
+
+#topbar {
+	background: white;
+	height: 50px;
+
+}
+#topbar h3 {
+	float: left;
+    font-weight: 100;
+    font-size: 13px;
+    margin: 15px;
+    color: #555;
+}
+
+#topbar .notifications {
+	float: right;
+	margin: 10px;
+}
+
+#topbar .notifications .icon {
+	display: inline-block;
+	margin-right: 15px;
+	font-size: 20px;
+	position: relative;
+}
+
+#topbar .notifications .icon .badge {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    font-size: 11px;
+    font-weight: 600;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    line-height: 13px;
+    border-radius: 1000px;
+    background: white;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    font-family: Helvetica;
+    transform: scale(0.85);
+    transform-origin: top left;
+}
+
+#sidebar {
+	width: 300px;
+	display: inline-block;
+	vertical-align: top;
+	padding-right: 20px;
+	padding-left: 10px;
+	padding-top: 20px;
+}
+
+#sidebar h2 {
+	text-transform: uppercase;
+	font-size: 12px;
+    border-color: black;
+    border-width: 0 0 2px;
+    border-style: solid;
+	padding-bottom: 10px;
+}
+#sidebar h2 span {
+		color: #666;
+}
+
+#sidebar a {
+	display: block;
+	background: white;
+	padding: 9px 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 10px;
+	transition: all 0.3s;
+}
+
+#sidebar a:hover {
+	background: black;
+	padding-left: 14px;
+}
+
+#content {
+	width: calc(100vw - 320px);
+	display: inline-block;
+	vertical-align: top;
+		padding-top: 20px;
+		padding-right: 20px;
+}
+
+#snackbar {
+	position: fixed;
+	bottom: 0;
+	background: black;
+	color: white;
+	width: 500px;
+	left: calc(50vw - 250px);
+	padding: 10px;
+	font-weight: 100;
+
+}
+
+#snackbar a {
+	border-width: 0 0 2px;
+	border-style: solid;
+	border-color: #555;
+	text-decoration: none;
+}
+
+h1, h2, h3 {
+	margin: 10px 0 20px;
+	color: black;
+}
+
+
+
+button.primary {
+	background: #444;
+	padding: 10px 20px;
+	border: 0;
+	transition: box-shadow 0.3s;
+	box-shadow: 0 0 0 rgba(0,0,0,0);
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 200;
+	outline: none;
+}
+
+
+button.primary:hover, button.primary:focus:hover {
+	box-shadow: 0 1px 3px black;
+}
+
+input[type="text"] {
+	border: 0;
+	border-bottom: 1px #ccc solid;
+	color: black;
+	padding: 5px 10px;
+	width: 100%;
+	display: block;
+	margin-top: 10px;
+	transition: border-color 0.3s ease, background 0.3s ease;
+	background: none;
+	font-size: 13px;
+}
+
+input[type="text"]:focus {
+	border-bottom-color: #333;
+	outline: none;
+	background: white;
+}
+
+.checkbox {
+	display: block;
+	margin-top: 20px;
+	position: relative;
+}
+
+.checkbox input[type=checkbox] {
+	display: none;
+}
+
+.checkbox label {
+	margin-left: 25px;
+	cursor: pointer;
+}
+
+.checkbox label:before {
+	content: "";
+	display: block;
+	background: white;
+	border: 1px #aaa solid;
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 200px;
+}
+
+.checkbox input + label:after {
+	content: "";
+	display: block;
+	border-width: 1px;
+	border-color: #444;
+	background: #444;
+	border-style: solid;
+	border-width: 1px;
+	width: 8px;
+	height: 8px;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	border-radius: 200px;
+	transition: opacity 0.3s, transform 0.3s;
+    opacity: 0;
+    transform: scale(0.2);
+}
+
+.checkbox input:checked + label:after {
+	opacity: 1;
+    transform: scale(1);
+}
+
+@media(max-width: 600px) {
+	#sidebar {
+		width: 100vw;
+	}
+	#content {
+		width; 100vw;
+	}
+}

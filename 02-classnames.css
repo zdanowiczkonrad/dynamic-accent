@@ -1,0 +1,16 @@
+.primary-text {
+	color: black;
+}
+
+.primary-fill {
+	background: black;
+	color: white;
+}
+
+:hover.primary-fill-hover {
+	background: black;
+	color: white;
+}
+.primary-border {
+	border-color: black;
+}

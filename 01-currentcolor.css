@@ -1,0 +1,59 @@
+.custom-primary-color {
+	color: #E91E63;
+	transition: color 0.3s ease;
+}
+
+.text-on-primary {
+	color: white;
+}
+
+.default-text {
+	color: black;
+}
+
+:hover > .text-on-primary-hover {
+	color: white;
+}
+
+
+#topbar .notifications .icon .badge {
+	border-color: currentColor;
+}
+
+#sidebar h2,
+#snackbar a,
+#topbar .notifications .icon .badge 
+ {
+	border-color: currentColor;
+}
+
+#sidebar a:hover {
+	background: currentColor;
+}	
+
+a {
+	color: currentColor;
+}
+p a {
+	color: blackcurrentColor;
+}
+
+
+button.primary {
+	background: currentColor;
+}
+
+
+button.primary:hover, button.primary:focus:hover {
+	box-shadow: 0 1px 3px currentColor;
+}
+
+input[type="text"]:focus {
+	border-color: currentColor;
+}
+
+
+.checkbox input + label:after {
+	border-color: currentColor;
+	background-color: currentColor;
+}

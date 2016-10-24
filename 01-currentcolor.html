@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CurrentColor primary</title>
+</head>
+<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="01-currentcolor.css"/>
+<body>
+	
+	<div id="container" class="custom-primary-color">
+		<div id="topbar">
+			<h3><span class="custom-primary-color">{☍}</span> Clean &amp; dynamic primary color change</h3>
+			<div class="notifications">
+				<span class="icon">
+				💬<span class="badge"><span class="default-text">2</span></span>
+				</span>
+				<span class="icon">
+				 👥<span class="badge"><span class="default-text">3</span></span>
+				</span>
+			</div>
+		</div>
+		<nav id="sidebar">
+			<h2 class="custom-primary-color"><span class="default-text">Menu</span></h2>
+			<a href="01-currentcolor.html"><span class="text-on-primary-hover menu-active">Switch colors using <code>currentColor</code></span></a>
+			<a href="02-classnames.html"><span class="text-on-primary-hover">Switch colors using <code>class names</code></span></a>
+			<input type="text" placeholder="Search...">
+		</nav>
+		<div id="content">
+			<h1>Primary colors everywhere?</h1>
+			<p>Well, seems like yes! You can now switch the primary color dynamically, super dynamically. All it takes is just a proper addition on the CSS level and a tiny JavaScript interaction. No preprocessors, SASS, LESS.</p>
+			<h2>Yeah, right. What's the catch?</h2>
+			<p>There can be only one primary color defined as of the current color usage, due to the <a href="" class="custom-primary-color">currentColor</a> limitations.</p>
+			<button id="shuffle-primary-currentcolor" class="custom-primary-color primary">
+			<span class="text-on-primary">Good enough. I want another color!</span></button>
+			<div class="checkbox">
+				<input type="checkbox" id="check">
+				<label for="check"><span class="default-text">I understand that this is a cool feature and I want to have it</span></label>
+			</div>
+		</div>
+		<div id="snackbar">
+			This page does not use cookie. <a class="custom-primary-color" href="#"><span class="text-on-primary">I don't accept that.</span></a>
+		</div>
+	</div>
+	<script src="shufflePrimary.js"></script>
+</body>
+</html>
